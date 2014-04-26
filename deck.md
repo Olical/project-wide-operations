@@ -75,79 +75,96 @@ Open an alternate file in a vertical split.
 
 # Find
 
-TODO
+Do your own thing.
 
 
 # Find
 
 ## CtrlP
 
-TODO
+Use to select a file by name within your project. (Or use :find!)
 
 
 # Find
 
 ## Ag
 
-TODO
+Find a file that contains a string, REALLY quickly.
 
 
 # Find
 
 ## Linters
 
-TODO
+Find issues project-wide with JSHint, for example. Jump around them with quickfix.
 
 
 # Find
 
 ## All things quickfix
 
-TODO
+CtrlP for names, quickfix for contents.
+
+
+# Find
+
+## Or use projections
+
+Using the edit commands works with completion.
 
 
 # Edit
 
-TODO
+Editing lots of files is tricky.
 
 
 # Edit
 
 ## Sed will suffice
 
-TODO
+But it isn't in Vim...
+
+```bash
+sed -i 's/Plugin '.*\//Plugin 'tpope\//g' ~/.vimrc
+```
 
 
 # Edit
 
 ## Iterating buffers, getting vimmer
 
-TODO
+Nice, but might get sluggish. Feels sub-optimal. (In my opinion)
 
 
 # Edit
 
 ## Batch line edit and write
 
-TODO
+What if you could edit multiple lines with Vim in one buffer, and write those changes to multiple files at once?
+
+ * Within Vim
+ * Can use your macros and plugins
+ * Doesn't involve pre-loading buffers and iterating over them
 
 
 # Edit
 
 ## Edit En Masse!
 
-TODO
+En Masse is my first plugin, it pulls the source from a quickfix and allows you to edit each line. Then write them back again!
 
 
 # Edit
 
 ## vim-enmasse example
 
-TODO
+ * Run JSHint. (a plugin)
+ * Execute `:EnMasse` to create an enmasse buffer from the quickfix list.
+ * Fix all of the issues. (you'll see the JSHint error get echoed as you scroll)
+ * Write in any way you want (:w), which will write each line to the right file!
+ * All fixed with one buffer!
 
 
 # :qa!
 
-## Closing dangerously
-
-TODO
+/\ pretty dangerous.

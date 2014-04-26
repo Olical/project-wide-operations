@@ -153,6 +153,8 @@ What if you could edit multiple lines with Vim in one buffer, and write those ch
 
 En Masse is my first plugin, it pulls the source from a quickfix and allows you to edit each line. Then write them back again!
 
+github.com/Wolfy87/vim-enmasse
+
 
 # Edit
 

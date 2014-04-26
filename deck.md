@@ -124,7 +124,7 @@ Editing lots of files is tricky.
 
 But it isn't in Vim...
 
-```bash
+```sh
 sed -i 's/Plugin '.*\//Plugin 'tpope\//g' ~/.vimrc
 ```
 

@@ -44,14 +44,14 @@ This creates plugin/foo.vim. Add a templates to pre-populate files.
 
 You don't have to use "E...", opening a file that matches a mapping is also templated!
 
-```vim
-:Eplugin foo
-```
-
 ```json
 {
 	"plugin/*.vim": {"command": "plugin", "template": ["echo 'HI'"]}
 }
+```
+
+```vim
+:Eplugin foo
 ```
 
 
@@ -61,10 +61,6 @@ You don't have to use "E...", opening a file that matches a mapping is also temp
 
 Open an alternate file in a vertical split.
 
-```vim
-:AV
-```
-
 ```json
 {
 	"syntax/*.vim": {"alternate": "indent/*.vim"},
@@ -72,10 +68,14 @@ Open an alternate file in a vertical split.
 }
 ```
 
+```vim
+:AV
+```
+
 
 # Find
 
-Do your own thing.
+Do your own thing / what works best. There's no standard.
 
 
 # Find
@@ -142,9 +142,9 @@ Nice, but might get sluggish. Feels sub-optimal. (In my opinion)
 
 What if you could edit multiple lines with Vim in one buffer, and write those changes to multiple files at once?
 
- * Within Vim
- * Can use your macros and plugins
- * Doesn't involve pre-loading buffers and iterating over them
+ * Within Vim.
+ * Can use your macros and plugins.
+ * Doesn't involve pre-loading buffers and iterating over them.
 
 
 # Edit

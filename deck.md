@@ -44,14 +44,14 @@ This creates plugin/foo.vim. Add a templates to pre-populate files.
 
 You don't have to use "E...", opening a file that matches a mapping is also templated!
 
+```vim
+:Eplugin foo
+```
+
 ```json
 {
 	"plugin/*.vim": {"command": "plugin", "template": ["echo 'HI'"]}
 }
-```
-
-```vim
-:Eplugin foo
 ```
 
 
@@ -61,15 +61,15 @@ You don't have to use "E...", opening a file that matches a mapping is also temp
 
 Open an alternate file in a vertical split.
 
+```vim
+:AV
+```
+
 ```json
 {
 	"syntax/*.vim": {"alternate": "indent/*.vim"},
 	"indent/*.vim": {"alternate": "syntax/*.vim"}
 }
-```
-
-```vim
-:AV
 ```
 
 
